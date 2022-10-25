@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SalesWebMvc.Migrations
 {
+    //Package Manager Console PM>
+    //Add-Migration NomeMigration
+    //Update-Database
     public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)

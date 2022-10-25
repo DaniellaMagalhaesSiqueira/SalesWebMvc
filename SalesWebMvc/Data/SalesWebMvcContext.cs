@@ -7,6 +7,10 @@ using SalesWebMvc.Models;
 
 namespace SalesWebMvc.Data
 {
+
+    //Package Manager Console PM>
+    //Add-Migration NomeMigration
+    //Update-Database
     public class SalesWebMvcContext : DbContext
     {
         public SalesWebMvcContext (DbContextOptions<SalesWebMvcContext> options)
@@ -14,6 +18,8 @@ namespace SalesWebMvc.Data
         {
         }
 
-        public DbSet<SalesWebMvc.Models.Department> Department { get; set; }
+        public DbSet<Department> Department { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> Sales { get; set; }
     }
 }

@@ -32,7 +32,7 @@ namespace SalesWebMvc.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Sales",
+                name: "SalesRecord",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -55,7 +55,7 @@ namespace SalesWebMvc.Migrations
 
             migrationBuilder.CreateIndex(
                 name: "IX_Sales_SellerId",
-                table: "Sales",
+                table: "SalesRecord",
                 column: "SellerId");
 
             migrationBuilder.CreateIndex(
